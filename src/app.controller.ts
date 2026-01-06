@@ -31,4 +31,9 @@ export class AppController {
       webhooks,
     };
   }
+
+  @Get('/')
+  getStatus(): { status: string } {
+    return { status: 'ok' };
+  }
 }
